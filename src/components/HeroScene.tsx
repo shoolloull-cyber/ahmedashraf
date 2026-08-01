@@ -208,7 +208,7 @@ export default function HeroScene({ onGiftOpened }: HeroSceneProps) {
   const [boxHidden, setBoxHidden] = useState(false);
 
   // Elegant text
-  const FULL_TYPING_TEXT = "النهاردة ليلتنا";
+  const FULL_TYPING_TEXT = "لسه بختارك كل يوم";
   const [typedText, setTypedText] = useState("");
 
   // Flower refs
