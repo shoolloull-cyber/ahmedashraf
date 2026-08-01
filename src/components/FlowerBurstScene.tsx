@@ -52,7 +52,7 @@ export default function FlowerBurstScene() {
           alt="ديكور كرز"
           width={160}
           height={160}
-          className="w-[110px] h-[110px] sm:w-[130px] sm:h-[130px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]"
+          className="w-[90px] h-[90px] sm:w-[130px] sm:h-[130px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]"
         />
       </motion.div>
 
@@ -69,15 +69,15 @@ export default function FlowerBurstScene() {
           alt="ديكور باقة ورد"
           width={170}
           height={170}
-          className="w-[120px] h-[120px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px] lg:w-[210px] lg:h-[210px] object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]"
+          className="w-[100px] h-[100px] sm:w-[140px] sm:h-[140px] md:w-[170px] md:h-[170px] lg:w-[210px] lg:h-[210px] object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.5)]"
         />
       </motion.div>
 
       {/* Main Content */}
-      <div className="relative z-10 w-full min-h-screen py-24 flex flex-col justify-center items-center">
+      <div className="relative z-10 w-full min-h-screen py-16 md:py-24 flex flex-col justify-center items-center">
         
         {/* Header and Camera Container */}
-        <div className="relative w-full px-4 md:px-20 pt-16 md:pt-20 flex flex-col md:flex-row items-center justify-center md:justify-around gap-10 z-20">
+        <div className="relative w-full px-4 md:px-20 pt-10 md:pt-20 flex flex-col md:flex-row items-center justify-center md:justify-around gap-6 md:gap-10 z-20">
           <motion.div
             className="text-center md:text-right"
             initial={{ opacity: 0, x: 30 }}
@@ -85,11 +85,11 @@ export default function FlowerBurstScene() {
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl md:text-5xl font-[family-name:var(--font-cairo)] font-bold text-white/90"
+            <h2 className="text-3xl md:text-5xl font-[family-name:var(--font-cairo)] font-bold text-white/90"
                 style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}>
               لحظاتنا الحلوة ♥️
             </h2>
-            <p className="text-[#D7B36A] font-[family-name:var(--font-cairo)] mt-2 tracking-widest text-sm">
+            <p className="text-[#D7B36A] font-[family-name:var(--font-cairo)] mt-2 tracking-widest text-xs md:text-sm">
               أحمد و نرمين - ذكريات من القلب
             </p>
           </motion.div>
@@ -101,7 +101,7 @@ export default function FlowerBurstScene() {
             transition={{ delay: 0.3, duration: 0.8 }}
           >
             <motion.div
-              className="relative w-[200px] h-[200px] md:w-[280px] md:h-[280px]"
+              className="relative w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[280px] md:h-[280px]"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             >
@@ -117,7 +117,7 @@ export default function FlowerBurstScene() {
 
         {/* Clothesline Container */}
         <motion.div 
-          className="relative w-full max-w-[1280px] mx-auto mt-12 md:mt-16 pb-12"
+          className="relative w-full max-w-[1280px] mx-auto mt-8 md:mt-16 pb-12"
           style={{ y: stringY }}
         >
           {/* Top String/Rope */}
@@ -126,12 +126,12 @@ export default function FlowerBurstScene() {
             <path d="M -20 12 Q 250 82 500 97 Q 750 82 1020 12" fill="none" stroke="#c9a050" strokeWidth="1" opacity="0.3" strokeLinecap="round" />
           </svg>
 
-          {/* Photos hanging from string */}
-          <div className="relative w-full flex flex-wrap lg:flex-nowrap justify-center items-start px-2 sm:px-4 md:px-6 gap-6 sm:gap-8 md:gap-8 lg:gap-6 pt-4">
+          {/* Photos hanging from string - 2 cards per row on mobile */}
+          <div className="relative w-full flex flex-wrap lg:flex-nowrap justify-center items-start px-2 sm:px-4 md:px-6 gap-3 sm:gap-6 md:gap-8 lg:gap-6 pt-4">
             
             {/* Photo 1 - الصورة الأولى */}
             <motion.div
-              className="relative w-[230px] h-[300px] sm:w-[260px] sm:h-[340px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-4"
+              className="relative w-[155px] h-[220px] sm:w-[240px] sm:h-[320px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-4"
               style={{ transformOrigin: "top center" }}
               initial={{ rotate: -5, opacity: 0, y: -30 }}
               whileInView={{ rotate: [-2, 2, -2], opacity: 1, y: 0 }}
@@ -139,7 +139,7 @@ export default function FlowerBurstScene() {
               transition={{ duration: 0.8, rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" } }}
             >
               {/* Wooden clothespin */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20 scale-125">
+              <div className="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2 z-20 scale-90 sm:scale-125">
                 <svg width="24" height="32" viewBox="0 0 24 32">
                   <rect x="3" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
                   <rect x="14" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
@@ -149,7 +149,7 @@ export default function FlowerBurstScene() {
               </div>
               
               {/* Polaroid frame */}
-              <div className="w-full h-full bg-white p-3 pb-12 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
+              <div className="w-full h-full bg-white p-2 pb-8 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
                 <div className="w-full flex-1 bg-[#fdf5e6] rounded-sm overflow-hidden relative border border-gray-200">
                   <Image
                     src="/assets/photo1.jpg"
@@ -158,7 +158,7 @@ export default function FlowerBurstScene() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
+                <p className="mt-2 sm:mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-xs sm:text-base font-medium" dir="rtl">
                   أحلى ثنائي في الدنيا 🤍
                 </p>
               </div>
@@ -166,7 +166,7 @@ export default function FlowerBurstScene() {
 
             {/* Photo 2 - الصورة الثانية */}
             <motion.div
-              className="relative w-[230px] h-[300px] sm:w-[260px] sm:h-[340px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-12"
+              className="relative w-[155px] h-[220px] sm:w-[240px] sm:h-[320px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-12"
               style={{ transformOrigin: "top center" }}
               initial={{ rotate: 4, opacity: 0, y: -30 }}
               whileInView={{ rotate: [2, -2, 2], opacity: 1, y: 0 }}
@@ -174,7 +174,7 @@ export default function FlowerBurstScene() {
               transition={{ duration: 0.8, delay: 0.3, rotate: { duration: 4.5, repeat: Infinity, ease: "easeInOut" } }}
             >
               {/* Wooden clothespin */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20 scale-125">
+              <div className="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2 z-20 scale-90 sm:scale-125">
                 <svg width="24" height="32" viewBox="0 0 24 32">
                   <rect x="3" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
                   <rect x="14" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
@@ -183,7 +183,7 @@ export default function FlowerBurstScene() {
                 </svg>
               </div>
               
-              <div className="w-full h-full bg-white p-3 pb-12 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
+              <div className="w-full h-full bg-white p-2 pb-8 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
                 <div className="w-full flex-1 bg-[#fdf5e6] rounded-sm overflow-hidden relative border border-gray-200">
                   <Image
                     src="/assets/photo2.jpg"
@@ -192,7 +192,7 @@ export default function FlowerBurstScene() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
+                <p className="mt-2 sm:mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-xs sm:text-base font-medium" dir="rtl">
                   ليالي حلوة وضحكات ما تنتهيش ✨
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function FlowerBurstScene() {
 
             {/* Photo 3 - الصورة الثالثة */}
             <motion.div
-              className="relative w-[230px] h-[300px] sm:w-[260px] sm:h-[340px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-4"
+              className="relative w-[155px] h-[220px] sm:w-[240px] sm:h-[320px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-4"
               style={{ transformOrigin: "top center" }}
               initial={{ rotate: -3, opacity: 0, y: -30 }}
               whileInView={{ rotate: [-1, 2, -1], opacity: 1, y: 0 }}
@@ -208,7 +208,7 @@ export default function FlowerBurstScene() {
               transition={{ duration: 0.8, delay: 0.6, rotate: { duration: 3.8, repeat: Infinity, ease: "easeInOut" } }}
             >
               {/* Wooden clothespin */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20 scale-125">
+              <div className="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2 z-20 scale-90 sm:scale-125">
                 <svg width="24" height="32" viewBox="0 0 24 32">
                   <rect x="3" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
                   <rect x="14" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
@@ -217,7 +217,7 @@ export default function FlowerBurstScene() {
                 </svg>
               </div>
               
-              <div className="w-full h-full bg-white p-3 pb-12 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
+              <div className="w-full h-full bg-white p-2 pb-8 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
                 <div className="w-full flex-1 bg-[#fdf5e6] rounded-sm overflow-hidden relative border border-gray-200">
                   <Image
                     src="/assets/photo3.jpg"
@@ -226,7 +226,7 @@ export default function FlowerBurstScene() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
+                <p className="mt-2 sm:mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-xs sm:text-base font-medium" dir="rtl">
                   البحر والسما وانتي جنبي 🌊
                 </p>
               </div>
@@ -234,7 +234,7 @@ export default function FlowerBurstScene() {
 
             {/* Photo 4 - الصورة الرابعة */}
             <motion.div
-              className="relative w-[230px] h-[300px] sm:w-[260px] sm:h-[340px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-10"
+              className="relative w-[155px] h-[220px] sm:w-[240px] sm:h-[320px] lg:w-[270px] lg:h-[350px] shrink-0 mt-2 lg:mt-10"
               style={{ transformOrigin: "top center" }}
               initial={{ rotate: 4, opacity: 0, y: -30 }}
               whileInView={{ rotate: [3, -1, 3], opacity: 1, y: 0 }}
@@ -242,7 +242,7 @@ export default function FlowerBurstScene() {
               transition={{ duration: 0.8, delay: 0.8, rotate: { duration: 4.2, repeat: Infinity, ease: "easeInOut" } }}
             >
               {/* Wooden clothespin */}
-              <div className="absolute -top-6 left-1/2 -translate-x-1/2 z-20 scale-125">
+              <div className="absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2 z-20 scale-90 sm:scale-125">
                 <svg width="24" height="32" viewBox="0 0 24 32">
                   <rect x="3" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
                   <rect x="14" y="0" width="7" height="28" rx="2" fill="#c4a06a" />
@@ -251,7 +251,7 @@ export default function FlowerBurstScene() {
                 </svg>
               </div>
               
-              <div className="w-full h-full bg-white p-3 pb-12 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
+              <div className="w-full h-full bg-white p-2 pb-8 sm:p-4 sm:pb-16 shadow-2xl rounded-sm border border-gray-100 flex flex-col justify-between">
                 <div className="w-full flex-1 bg-[#fdf5e6] rounded-sm overflow-hidden relative border border-gray-200">
                   <Image
                     src="/assets/photo4.jpg"
@@ -260,7 +260,7 @@ export default function FlowerBurstScene() {
                     className="object-cover object-top"
                   />
                 </div>
-                <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
+                <p className="mt-2 sm:mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-xs sm:text-base font-medium" dir="rtl">
                   مغامرات مع بعض لآخر الدنيا 💫
                 </p>
               </div>
