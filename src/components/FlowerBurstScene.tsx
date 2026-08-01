@@ -155,7 +155,7 @@ export default function FlowerBurstScene() {
                     src="/assets/photo1.jpg"
                     alt="أحمد ونرمين"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
@@ -189,7 +189,7 @@ export default function FlowerBurstScene() {
                     src="/assets/photo2.jpg"
                     alt="أحمد ونرمين"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
@@ -223,7 +223,7 @@ export default function FlowerBurstScene() {
                     src="/assets/photo3.jpg"
                     alt="أحمد ونرمين"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
@@ -257,7 +257,7 @@ export default function FlowerBurstScene() {
                     src="/assets/photo4.jpg"
                     alt="أحمد ونرمين"
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
