@@ -69,7 +69,7 @@ export default function Home() {
               transition={{ duration: 2, repeat: Infinity }}
             >
               <h2 className="text-3xl md:text-5xl font-[family-name:var(--font-cairo)] font-bold text-[#D7B36A] tracking-wide text-center px-4">
-                تفاصيل ليلة لا تُنسى...
+                وجودك كفاية يظبط اليوم
               </h2>
             </motion.div>
             <motion.p
