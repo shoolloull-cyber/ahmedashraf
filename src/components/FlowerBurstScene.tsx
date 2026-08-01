@@ -159,7 +159,7 @@ export default function FlowerBurstScene() {
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
-                  أحلى ثنائي في الدنيا
+                  أحلى ثنائي في الدنيا 🤍
                 </p>
               </div>
             </motion.div>
@@ -193,7 +193,7 @@ export default function FlowerBurstScene() {
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
-                  ليالي حلوة وضحكات ما تنتهيش
+                  ليالي حلوة وضحكات ما تنتهيش ✨
                 </p>
               </div>
             </motion.div>
@@ -227,7 +227,7 @@ export default function FlowerBurstScene() {
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
-                  البحر والسما وانتي جنبي
+                  البحر والسما وانتي جنبي 🌊
                 </p>
               </div>
             </motion.div>
@@ -261,7 +261,7 @@ export default function FlowerBurstScene() {
                   />
                 </div>
                 <p className="mt-3 text-center text-[#8B6E5A] font-[family-name:var(--font-cairo)] text-sm sm:text-base font-medium" dir="rtl">
-                  مغامرات مع بعض لآخر الدنيا
+                  مغامرات مع بعض لآخر الدنيا 💫
                 </p>
               </div>
             </motion.div>
